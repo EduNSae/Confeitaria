@@ -1,9 +1,11 @@
+/* PARA TODA A PAGINA */
 body {
 
     font-family: 'Montserrat', sans-serif;
     
 }
 
+/* CABEÇALHO */
 header {
 
     background: #888888;
@@ -48,4 +50,22 @@ nav a:hover {
     color: #ffffff;
     text-decoration: underline;
 
+}
+
+/* CONTEUDO */
+.principal {
+
+	padding: 3em 0;
+	background: #FEFEFE;
+	width: 940px;
+    margin: 0 auto;
+    
+}
+.titulo {
+
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+    clear: left;
+    
 }
