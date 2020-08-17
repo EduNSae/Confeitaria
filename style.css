@@ -1,0 +1,43 @@
+body {
+
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+header {
+
+    background: #888888;
+
+}
+
+.bloco {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 130px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+.image {
+
+    width: 250px;
+    height: 250px;
+
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
