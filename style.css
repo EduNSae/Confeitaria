@@ -7,6 +7,7 @@ body {
 header {
 
     background: #888888;
+    padding: 20px 0;
 
 }
 
@@ -40,4 +41,11 @@ nav a {
 	font-weight: bold;
 	font-size: 22px;
 	text-decoration: none;
+}
+
+nav a:hover {
+
+    color: #ffffff;
+    text-decoration: underline;
+
 }
