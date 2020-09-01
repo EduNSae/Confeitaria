@@ -8,7 +8,7 @@ body {
 /* CABEÇALHO */
 header {
 
-    background: #888888;
+    background: url("textura.png");
     padding: 20px 0;
 
 }
