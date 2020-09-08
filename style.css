@@ -1,71 +1,14 @@
-/* PARA TODA A PAGINA */
-body {
+.fonte-titulo {
 
-    font-family: 'Montserrat', sans-serif;
-    
-}
-
-/* CABEÇALHO */
-header {
-
-    background: url("textura.png");
-    padding: 20px 0;
+    margin-top: 15px;
+    font-family: 'Satisfy', sans-serif;
 
 }
 
-.bloco {
-	position: relative;
-	width: 940px;
-	margin: 0 auto;
-}
+.img-size {
 
-nav {
-	position: absolute;
-	top: 130px;
-	right: 0;
-}
+    height: 225px; 
+    width: 100%; 
+    display: block;
 
-nav li {
-	display: inline;
-	margin: 0 0 0 15px;
-}
-
-.image {
-
-    width: 250px;
-    height: 250px;
-
-}
-
-nav a {
-	text-transform: uppercase;
-	color: #000000;
-	font-weight: bold;
-	font-size: 22px;
-	text-decoration: none;
-}
-
-nav a:hover {
-
-    color: #ffffff;
-    text-decoration: underline;
-
-}
-
-/* CONTEUDO */
-.principal {
-
-	padding: 3em 0;
-	background: #FEFEFE;
-	width: 940px;
-    margin: 0 auto;
-    
-}
-.titulo {
-
-	text-align: center;
-	font-size: 2em;
-	margin: 0 0 1em;
-    clear: left;
-    
 }
