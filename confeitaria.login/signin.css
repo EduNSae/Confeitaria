@@ -10,7 +10,8 @@ body {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #f5f5f5;
+  background-color: #fefefe;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .form-signin {
@@ -42,10 +43,11 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-
+.buttoneffect {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
 .buttoneffect:hover {
-
   font-size: 20px;
   color: #ffffff;
-
 }
