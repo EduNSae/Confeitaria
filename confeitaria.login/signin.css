@@ -43,11 +43,11 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-.buttoneffect {
+.btn-simples{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
-.buttoneffect:hover {
-  font-size: 20px;
+.btn-simples:hover {
   color: #ffffff;
+
 }
