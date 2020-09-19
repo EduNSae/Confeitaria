@@ -8,34 +8,36 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Casa Fouet</title>
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-faded fixed-top" style="background-color: #EB5CE1; border-color: #000;">
-      <a class="navbar-brand" href="index.html">Casa Fouet</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-faded fixed-top"
+      style="background-color: #f700e6; border-color: #000;">
+      <a class="navbar-brand fonte-titulo-2" href="index.html">Casa Fouet</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-          <a class="nav-link" href="#">Produto</a>
-          <a class="nav-link" href="#">Forum</a>
-          <a class="nav-link" href="#" data-toggle="modal" data-target="#Contatos">Contato</a>
+          <a class="nav-link active a-style" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+          <a class="nav-link a-style" href="Confeitaria.produtos/produtos.html">Produto</a>
+          <a class="nav-link a-style" href="Confeitaria.forum/forum.html">Forum</a>
+          <a class="nav-link a-style" href="#" data-toggle="modal" data-target="#Contatos">Contato</a>
         </div>
       </div>
     </nav>
   </header>
   <main>
-      <h1 class="text-center fonte-titulo display-4 m-top">Quem somos?!</h1>
-      <p class="text-center text-justify">Somos uma nova loja de confeitaria inovando e trazendo nosso mercado físico para
-        o digital, e aqui você poderá fazer suas encomendas dos nossos produtos sem se preocupar.</p>
-      <!--Cards de mostruario.-->  
-      <section class="cartões">
+    <h1 class="text-center fonte-titulo display-4 m-top">Quem somos?!</h1>
+    <p class="text-center text-justify">Somos uma nova loja de confeitaria inovando e trazendo nosso mercado físico para
+      o digital, e aqui você poderá fazer suas encomendas dos nossos produtos sem se preocupar.</p>
+    <!--Cards de mostruario.-->
+    <section class="cartões">
       <div class="album py-5 bg-light">
         <div class="container">
           <div class="row">
@@ -119,7 +121,8 @@
                   alt="Thumbnail [100%x225]" src="img/p5.jpg" data-holder-rendered="true">
                 <div class="card-body">
                   <p class="card-text text-justify">Este e um exemplo de bolo para pessoas que gostam de heróis, mas sem
-                    perde a delicadeza infantil, contendo as características escolhidas pela própria cliente. Se quiserem saber mais e só clicar em
+                    perde a delicadeza infantil, contendo as características escolhidas pela própria cliente. Se
+                    quiserem saber mais e só clicar em
                     ver.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
@@ -220,42 +223,39 @@
     </section>
   </footer>
 
-
-
-
-<div class="modal fade" id="Contatos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Entre em Contato</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form action="">
-          <div class="form-group">
-            <label for="formGroupExampleInput">Nome Completo</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite seu nome">
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlInput1">Endereço de e-mail</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@email.com">
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Faça seu comentário</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-             placeholder="Digite seu comentário aqui"></textarea>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        <button type="button" class="btn btn-card">Enviar</button>
+  <div class="modal fade" id="Contatos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Entre em Contato</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="form-group">
+              <label for="formGroupExampleInput">Nome Completo</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite seu nome">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Endereço de e-mail</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@email.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Faça seu comentário</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="Digite seu comentário aqui"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-card">Enviar</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

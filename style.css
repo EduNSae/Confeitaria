@@ -1,6 +1,15 @@
 .fonte-titulo {
-    margin-top: 15px;
     font-family: 'Satisfy', sans-serif;
+}
+.fonte-titulo-2 {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+.a-style {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
 }
 .m-top {
     margin-top: 5rem;
