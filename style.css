@@ -2,6 +2,9 @@
     margin-top: 15px;
     font-family: 'Satisfy', sans-serif;
 }
+.m-top {
+    margin-top: 5rem;
+}
 .img-size {
     height: 225px; 
     width: 100%; 
