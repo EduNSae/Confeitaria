@@ -45,11 +45,14 @@ body {
 .btn-simples{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
+  color: #ffffff;
+  background-color: darkred;
 }
 .btn-simples:hover {
-  color: #ffffff;
+  color: #feeefe;
+  background-color: rgb(194, 0, 0);
 
 }
-.confirm {
-  margin-bottom: 10px;
+.m-bottom {
+  margin-bottom: 5px !important;
 }
