@@ -57,7 +57,7 @@ footer {
 .starrating > input {display: none;}  /* Remove radio buttons */
 
 .starrating > label:before { 
-  content: "\2730"; /* Star */
+  content: "\2605"; /* Star */
   margin: 2px;
   font-size: 2em;
   font-family: FontAwesome;
