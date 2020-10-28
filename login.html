@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <link rel="stylesheet" href="css/reset.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Login</title>
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="signin.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/signin.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body class="text-center">
-    <form class="form-signin" action="">
-      <img class="mb-4" src="../img/icon.png" alt="" width="150" height="150">
+    <form class="form-signin" action="php/login.php" method="POST">
+      <img class="mb-4" src="img/icon.png" alt="" width="150" height="150">
       <h1 class="h3 mb-3 font-weight-normal">Faça login</h1>
       <label for="inputEmail" class="sr-only">Endereço de email</label>
-      <input type="email" id="inputEmail" class="form-control m-bottom" placeholder="Seu email" required="" autofocus="">
-      <label for="inputPassword" class="sr-only">Senha</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required="">
-      <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me"> Lembrar de mim</label>
+      <input type="email" id="inputEmail" class="form-control m-bottom" placeholder="Seu email" required autofocus="" name="email">
+      <label for="inputPassword" class="sr-only" minlength="6" maxlength="16">Senha</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required name="senha">
+      <div class="checkbox mb-3 m_top">
+          <a href="signup.html" class="linkgl">Não possui cadastro?</a>
       </div>
-      <button class="btn btn-light btn-faded btn-block btn-simples" type="submit" style="background-color: #EB5CE1;">LOGIN</button>
+      <button class="btn btn-block btn-card" type="submit">LOGIN</button>
+      
+      <button class="btn btn-block btn-card" onclick="window.location.href='index.html'">VOLTAR</button>
       <p class="mt-5 mb-3 text-muted">© 2020</p>
     </form>
   

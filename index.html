@@ -2,14 +2,18 @@
 <html lang="pt-br">
 
 <head>
+  <link rel="stylesheet" href="css/reset.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- Fonts Page-->
   <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Style Page-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
   <title>Casa Fouet</title>
 </head>
 
@@ -25,14 +29,16 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link active a-style" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-          <a class="nav-link a-style" href="Confeitaria.produtos/produtos.html">Produto</a>
-          <a class="nav-link a-style" href="Confeitaria.forum/forum.html">Forum</a>
+          <a class="nav-link a-style" href="produtos.html">Produto</a>
+          <a class="nav-link a-style" href="forum.php">Forum</a>
+          <a class="nav-link a-style" href="login.html">Login</a>
           <a class="nav-link a-style" href="#" data-toggle="modal" data-target="#Contatos">Contato</a>
         </div>
       </div>
     </nav>
   </header>
   <main>
+    <!-- Sobre a empresa-->
     <h1 class="text-center fonte-titulo display-4 m-top">Quem somos?!</h1>
     <p class="text-center text-justify">Somos uma nova loja de confeitaria inovando e trazendo nosso mercado físico para
       o digital, e aqui você poderá fazer suas encomendas dos nossos produtos sem se preocupar.</p>
@@ -202,8 +208,8 @@
                     dedicação entregue as melhores e mais doces sensações para cada momento da vida!</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-card"><a href="https://www.instagram.com/docesafetoss/"
-                          class="linkdis">Ver</a></button>
+                      <button type="button" class="btn btn-sm btn-card"><a
+                          href="https://www.instagram.com/docesafetoss/" class="linkdis">Ver</a></button>
                     </div>
                   </div>
                 </div>
@@ -241,6 +247,10 @@
             <div class="form-group">
               <label for="exampleFormControlInput1">Endereço de e-mail</label>
               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@email.com">
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput">Telefone</label>
+              <input type="number" class="form-control" id="formGroupExampleInput" placeholder="(XX) XXXXX-XXXX">
             </div>
             <div class="form-group">
               <label for="exampleFormControlTextarea1">Faça seu comentário</label>
