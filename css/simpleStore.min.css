@@ -22,7 +22,11 @@ select {
 }
 
 .brand:hover {
+<<<<<<< HEAD
     color: #EB5CE1
+=======
+    color: #777
+>>>>>>> eb19e12496b7dd164b6363d84013fa545473f23c
 }
 
 .brand img {
