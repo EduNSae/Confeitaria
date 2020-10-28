@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="signin.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+
+    <form action="r" method="post" accept-charset="utf-8" class="form-signin" role="form">
+        <img class="mb-4" src="../img/icon.png" alt="" width="150" height="150">
+        <h1 class="h3 mb-3 font-weight-normal">Faça Cadastro</h1>
+
+        <input type="text" name="firstname" class="form-control input-margin m-bottom" placeholder="Primeiro Nome" />
+        <input type="text" name="lastname" class="form-control m-bottom" placeholder="Segundo Nome" />
+        <input type="text" name="email" class="form-control m-bottom" placeholder="Seu email" />
+        <input type="password" name="password" class="form-control m-bottom" placeholder="senha" />
+        <input type="password" name="confirma_senha" class="form-control m-bottom" placeholder="Confirma a senha" />
+        
+        <div class="checkbox mb-1">
+            <label>Birth Date</label>
+            <input type="date" name="BirthDate">
+            <label>Genero:</label>
+            <select>
+                <option name="gender" value="M" id="male">Masculino</option>
+                <option name="gender" value="F" id="feminine">Feminino</option>
+                <option name="gender" value="I" id="Undefined">Não Declarar</option>
+            </select>
+        </div>
+        <button class="btn btn-faded btn-block btn-simples" type="submit"">Cria minha conta</button>
+    </form>
+
+    <script src="login.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
