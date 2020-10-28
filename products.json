@@ -1,0 +1,32 @@
+{
+	"products" : [
+		{
+			"name" : "Bolo Halloween",
+			"price" : "69.99",
+			"options" : [
+				{"Sabor" : "Chocolate, Baunilha, Abacaxi"}
+			],
+			"image" : "https://i.ibb.co/N9VyrQY/bolo.png",
+			"description" : "São bolos tematico de halloween"
+		},
+		{
+			"name" : "Docinhos",
+			"price" : "9.99",
+			"options" : [
+				{"Brigadeiro" : "Sem,Com"},
+				{"Beijinho" : "Sem,Com"}
+			],
+			"image" : "https://i.ibb.co/kmY9kM7/doces.png",
+			"description" : "Um delicioso centro de doces"
+		},
+		{
+			"name" : "Pão de Mel",
+			"price" : "4.99",
+			"options" : [
+				{ "Sabor" : "Chocolate, Tradicional" }
+			],
+			"image" : "https://i.ibb.co/Hdh5kmK/paodemel.png",
+			"description" : "Um delicioso pão de mel."
+		}
+	]
+}
