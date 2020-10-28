@@ -388,30 +388,18 @@ p {
 }
 
 a {
-<<<<<<< HEAD
     color: #EB5CE1
 }
 
 a:hover {
     color: #EB5CE1
-=======
-    color: #1EAEDB
-}
-
-a:hover {
-    color: #0FA0CE
->>>>>>> eb19e12496b7dd164b6363d84013fa545473f23c
 }
 
 .button, button, input[type=submit], input[type=reset], input[type=button] {
     display: inline-block;
     height: 38px;
     padding: 0 30px;
-<<<<<<< HEAD
     color: #EB5CE1;
-=======
-    color: #555;
->>>>>>> eb19e12496b7dd164b6363d84013fa545473f23c
     text-align: center;
     font-size: 11px;
     font-weight: 600;
@@ -422,48 +410,28 @@ a:hover {
     white-space: nowrap;
     background-color: transparent;
     border-radius: 4px;
-<<<<<<< HEAD
     border: 1px solid #EB5CE1;
-=======
-    border: 1px solid #bbb;
->>>>>>> eb19e12496b7dd164b6363d84013fa545473f23c
     cursor: pointer;
     box-sizing: border-box
 }
 
 .button:focus, .button:hover, button:focus, button:hover, input[type=submit]:focus, input[type=submit]:hover, input[type=reset]:focus, input[type=reset]:hover, input[type=button]:focus, input[type=button]:hover {
-<<<<<<< HEAD
     color:#FEFEFE;
     border-color: #EB5CE1;
     background-color: #EB5CE1;
-=======
-    color: #333;
-    border-color: #888;
->>>>>>> eb19e12496b7dd164b6363d84013fa545473f23c
     outline: 0
 }
 
 .button.button-primary, button.button-primary, input[type=submit].button-primary, input[type=reset].button-primary, input[type=button].button-primary {
-<<<<<<< HEAD
     color: #EB5CE1;
     background-color: #FEFEFE;
     border-color: #EB5CE1
-=======
-    color: #FFF;
-    background-color: #33C3F0;
-    border-color: #33C3F0
->>>>>>> eb19e12496b7dd164b6363d84013fa545473f23c
 }
 
 .button.button-primary:focus, .button.button-primary:hover, button.button-primary:focus, button.button-primary:hover, input[type=submit].button-primary:focus, input[type=submit].button-primary:hover, input[type=reset].button-primary:focus, input[type=reset].button-primary:hover, input[type=button].button-primary:focus, input[type=button].button-primary:hover {
     color: #FFF;
-<<<<<<< HEAD
     background-color: #EB5CE1;
     border-color: #EB5CE1
-=======
-    background-color: #1EAEDB;
-    border-color: #1EAEDB
->>>>>>> eb19e12496b7dd164b6363d84013fa545473f23c
 }
 
 input[type=tel], input[type=url], input[type=password], input[type=email], input[type=number], input[type=search], input[type=text], select, textarea {

@@ -26,11 +26,9 @@
 				{ "Sabor" : "Chocolate, Tradicional" }
 			],
 			"image" : "https://i.ibb.co/Hdh5kmK/paodemel.png",
-<<<<<<< HEAD
+
 			"description" : "Um delicioso pão de mel."
-=======
-			"description" : "This is another fun grey T-shirt"
->>>>>>> eb19e12496b7dd164b6363d84013fa545473f23c
+
 		}
 	]
 }
