@@ -1,25 +1,30 @@
 .fonte-titulo {
     font-family: 'Satisfy', sans-serif;
 }
+
 .fonte-titulo-2 {
     font-family: 'Dancing Script', sans-serif;
     font-size: 25px;
     font-weight: bold;
 }
+
 .a-style {
     font-family: 'Dancing Script', sans-serif;
     font-size: 20px;
     font-weight: bold;
 }
+
 .m-top {
     margin-top: 5rem;
 }
+
 .img-size {
     height: 225px; 
     width: 100%; 
     display: block;
     object-fit: cover;
 }
+
 .img-sizeesp {
     height: 225px; 
     width: 100%; 
@@ -27,9 +32,11 @@
     object-fit: cover;
     object-position: 0 100%;
 }
+
 footer {
     background: #fefefe;
 }
+
 .linkdis {
     text-decoration:none !important; 
     color: #EB5CE1;
@@ -39,18 +46,22 @@ footer {
     color: #EB5CE1;
     border-color: #EB5CE1;
 }
+
 .btn-card:hover {
     color: #fefefe;
     background: #EB5CE1;
 }
+
 .linkdis:hover {
     color: #fefefe;
     background: #EB5CE1;
 }
+
 .linkgl {
     text-decoration: none;
     color: #EB5CE1;
 }
+
 .linkgl:hover {
     text-decoration: underline;
     color: #7836BA;
@@ -60,7 +71,7 @@ footer {
     margin-bottom: 10px!important;
 }
 
-/* Forum */
+/* Forum  */
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
 /* Styling h1 and links

@@ -25,5 +25,6 @@ $sql = "CALL Insere('$nomeComplete', '$endereco', '$cep', '$estado', '$city', '$
                  window.location.href = '../signup.html';
               </script>";
     }
-
+    
 exit;
+?>
