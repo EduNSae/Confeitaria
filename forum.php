@@ -77,7 +77,7 @@ $sqlBuscar = mysqli_query($link, $sql);
                                     for ($i = 0; $i < $dado["numeroStar"]; $i++) { ?>
                                         <?php echo "<img src='img/star1.png'>"; ?>
                                     <?php } ?>
-                                    <p>'<?php echo $dado["Comentario"]; ?>'</p>
+                                    <p>'<?php echo $dado["comentario"]; ?>'</p>
                                 <?php } ?>
                                 <?php
                                 if ($dado["numeroStar"] == 4) { ?>
@@ -87,7 +87,7 @@ $sqlBuscar = mysqli_query($link, $sql);
                                     for ($i = 0; $i < $dado["numeroStar"]; $i++) { ?>
                                         <?php echo "<img src='img/star1.png'>"; ?>
                                     <?php } ?>
-                                    <p style="margin-bottom: 2px;">'<?php echo $dado["Comentario"]; ?>'</p>
+                                    <p>'<?php echo $dado["comentario"]; ?>'</p>
                                 <?php } ?>
                                 <?php
                                 if ($dado["numeroStar"] == 3) { ?>
@@ -97,7 +97,7 @@ $sqlBuscar = mysqli_query($link, $sql);
                                     for ($i = 0; $i < $dado["numeroStar"]; $i++) { ?>
                                         <?php echo "<img src='img/star1.png'>"; ?>
                                     <?php } ?>
-                                    <p>'<?php echo $dado["Comentario"]; ?>'</p>
+                                    <p>'<?php echo $dado["comentario"]; ?>'</p>
                                 <?php } ?>
                                 <?php
                                 if ($dado["numeroStar"] == 2) { ?>
@@ -107,7 +107,7 @@ $sqlBuscar = mysqli_query($link, $sql);
                                     for ($i = 0; $i < $dado["numeroStar"]; $i++) { ?>
                                         <?php echo "<img src='img/star1.png'>"; ?>
                                     <?php } ?>
-                                    <p>'<?php echo $dado["Comentario"]; ?>'</p>
+                                    <p>'<?php echo $dado["comentario"]; ?>'</p>
                                 <?php } ?>
                                 <?php
                                 if ($dado["numeroStar"] == 1) { ?>
@@ -117,7 +117,7 @@ $sqlBuscar = mysqli_query($link, $sql);
                                     for ($i = 0; $i < $dado["numeroStar"]; $i++) { ?>
                                         <?php echo "<img src='img/star1.png'>"; ?>
                                     <?php } ?>
-                                    <p>'<?php echo $dado["Comentario"]; ?>'</p>
+                                    <p>'<?php echo $dado["comentario"]; ?>'</p>
                                 <?php } ?>
                             </div>
                         <?php } ?>

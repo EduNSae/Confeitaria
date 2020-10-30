@@ -3,7 +3,8 @@
 session_start();
 include("connect.php");
 
-$nomeComplete = filter_input(INPUT_POST, 'nome');
+$nome = filter_input(INPUT_POST, 'nome');
+$sobrenome = filter_input(INPUT_POST, 'sobrenome');
 $endereco = $_POST['endereco'];
 $cep = $_POST['cep'];
 $estado = $_POST['estado'];
@@ -12,7 +13,7 @@ $email = $_POST['email'];
 $senha = $_POST['senha'];
 $date = $_POST['date'];
 
-$sql = "CALL Insere('$nomeComplete', '$endereco', '$cep', '$estado', '$city', '$email', '$senha', CURDATE(), '$date')";
+$sql = "CALL Insere('$nome', '$sobrenome', '$endereco', '$cep', '$estado', '$city', '$email', '$senha', CURDATE(), '$date')";
             
     if ($link->query($sql) === TRUE) {
         echo "<script>
@@ -25,6 +26,5 @@ $sql = "CALL Insere('$nomeComplete', '$endereco', '$cep', '$estado', '$city', '$
                  window.location.href = '../signup.html';
               </script>";
     }
-    
+
 exit;
-?>

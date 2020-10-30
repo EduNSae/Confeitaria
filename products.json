@@ -26,7 +26,6 @@
 				{ "Sabor" : "Chocolate, Tradicional" }
 			],
 			"image" : "https://i.ibb.co/Hdh5kmK/paodemel.png",
-
 			"description" : "Um delicioso pão de mel."
 		},
 		{
@@ -48,13 +47,13 @@
 			"description" : "Bolo com uma tematica McDonald's."
 		},
 		{
-			"name" : "Bolo Tema de Luta",
+			"name" : "Bolo UFC",
 			"price" : "54.99",
 			"options" : [
 				{ "Sabor" : "Chocolate, Baunilha, Abacaxi" }
 			],
 			"image" : "https://i.ibb.co/FsL2q0v/bolo4.png",
-			"description" : "Bolo tematico de luta. "
+			"description" : "Bolo tematico de luta."
 		}
 	]
 }
