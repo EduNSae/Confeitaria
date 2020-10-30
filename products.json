@@ -7,7 +7,7 @@
 				{"Sabor" : "Chocolate, Baunilha, Abacaxi"}
 			],
 			"image" : "https://i.ibb.co/N9VyrQY/bolo.png",
-			"description" : "São bolos tematico de halloween"
+			"description" : "São bolos tematicos de halloween"
 		},
 		{
 			"name" : "Docinhos",
@@ -27,6 +27,33 @@
 			],
 			"image" : "https://i.ibb.co/Hdh5kmK/paodemel.png",
 			"description" : "Um delicioso pão de mel."
+		},
+		{
+			"name" : "Bolo Jack Daniels",
+			"price" : "59.99",
+			"options" : [
+				{ "Sabor" : "Chocolate, Baunilha, Abacaxi" }
+			],
+			"image" : "https://i.ibb.co/qMGvD5T/bolo2.png",
+			"description" : "Bolo tematico de Jack Daniels."
+		},
+		{
+			"name" : "Bolo McDonald's",
+			"price" : "64.99",
+			"options" : [
+				{ "Sabor" : "Chocolate, Baunilha, Abacaxi" }
+			],
+			"image" : "https://i.ibb.co/ynxQw86/bolo-3.png",
+			"description" : "Bolo com uma tematica McDonald's."
+		},
+		{
+			"name" : "Bolo Tema de Luta",
+			"price" : "54.99",
+			"options" : [
+				{ "Sabor" : "Chocolate, Baunilha, Abacaxi" }
+			],
+			"image" : "https://i.ibb.co/FsL2q0v/bolo4.png",
+			"description" : "Bolo tematico de luta."
 		}
 	]
 }

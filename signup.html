@@ -23,10 +23,26 @@
             <input type="text" class="form-control" id="inputAddress" placeholder="Maximillian Angres Lock" name="nome"
                 required>
         </div>
-        <div class="form-group">
-            <label for="inputAddress2">Endereço</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor City-SG"
-                name="endereco" required>
+        <div class="form-row">
+            <div class="form-group col-md-8">
+                <label for="inputAddress2">Endereço</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Rua Alves Quadra 10 casa 17"
+                    name="endereco" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputCep">CEP</label>
+                <input type="text" class="form-control" id="inputCep" placeholder="70000-000" name="cep" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEstado">Estado</label>
+                <input type="text" class="form-control" id="inputEstado" placeholder="Estado" name="estado" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputCidade">Cidade</label>
+                <input type="text" class="form-control" id="inputCidade" placeholder="city" name="cidade" required>
+            </div>
         </div>
         <div class="form-group">
             <label for="inputEmail4">Email</label>
@@ -37,7 +53,7 @@
             <div class="form-group col-md-6">
                 <label for="inputPassword4">Senha</label>
                 <input type="password" class="form-control" id="inputPassword4" placeholder="password" name="senha"
-                    required>
+                   minlength="8" maxlength="20" required>
             </div>
             <div class="form-group col-md-6">
                 <label for="inputDate">Data de Nascimento</label>

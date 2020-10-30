@@ -21,7 +21,7 @@ $sqlBuscar = mysqli_query($link, $sql);
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-faded" style="background-color: #f700e6; border-color: #000;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-faded fixed-top" style="background-color: #f700e6; border-color: #000;">
             <a class="navbar-brand fonte-titulo-2" href="index.html">Casa Fouet</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -41,8 +41,8 @@ $sqlBuscar = mysqli_query($link, $sql);
         <div class="container text-center ">
             <div class="row">
 
-                <div class="col-12  m-1 p-1">
-                    <h1>Avaliações</h1>
+                <div class="col-12 ">
+                    <h1 class="m-top">Avaliações</h1>
                     <form action="php/ratingInsert.php" name="form" method="POST">
                         <div class="starrating risingstar d-flex justify-content-center flex-row-reverse">
                             <input type="radio" id="star5" name="rating" value="5" data-index="4" /><label for="star5" title="5 star"></label>
@@ -57,13 +57,13 @@ $sqlBuscar = mysqli_query($link, $sql);
                             <p class="text-muted" style="margin-bottom: 0;"><small><span name="comentario">250</span></small> caracteres restantes</p>
                         </div>
                         <div>
-                            <button type="submit" class="btn btn-card" id="botao-postar">Postar</button>
+                            <button type="submit" class="btn btn-card m-bot" id="botao-postar">Postar</button>
                         </div>
                     </form>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 m-1 p-1" id="result">
+                <div class="col-12" id="result">
                     <div class="text-center">
                         <?php
                         while ($dado = $sqlBuscar->fetch_array()) {
@@ -71,7 +71,8 @@ $sqlBuscar = mysqli_query($link, $sql);
                             <div class="border rounded-pill m-bot" style="border-color: #f700e6!important;">
                                 <?php
                                 if ($dado["numeroStar"] == 5) { ?>
-                                    <p style="margin-bottom: 2px; font-weight: bold; size: 18px"><?php echo $dado["nomeUsuario"]; ?></p>
+                                    <p style="margin-bottom: 2px; font-weight: bold; size: 18px;">
+                                        <?php echo $dado["nomeUsuario"]; ?></p>
                                     <?php
                                     for ($i = 0; $i < $dado["numeroStar"]; $i++) { ?>
                                         <?php echo "<img src='img/star1.png'>"; ?>
@@ -80,7 +81,8 @@ $sqlBuscar = mysqli_query($link, $sql);
                                 <?php } ?>
                                 <?php
                                 if ($dado["numeroStar"] == 4) { ?>
-                                    <p style="margin-bottom: 2px; font-weight: bold; size: 18px"><?php echo $dado["nomeUsuario"]; ?></p>
+                                    <p style="margin-bottom: 2px; font-weight: bold; size: 18px">
+                                        <?php echo $dado["nomeUsuario"]; ?></p>
                                     <?php
                                     for ($i = 0; $i < $dado["numeroStar"]; $i++) { ?>
                                         <?php echo "<img src='img/star1.png'>"; ?>
@@ -89,7 +91,8 @@ $sqlBuscar = mysqli_query($link, $sql);
                                 <?php } ?>
                                 <?php
                                 if ($dado["numeroStar"] == 3) { ?>
-                                    <p style="margin-bottom: 2px; font-weight: bold; size: 18px"><?php echo $dado["nomeUsuario"]; ?></p>
+                                    <p style="margin-bottom: 2px; font-weight: bold; size: 18px">
+                                        <?php echo $dado["nomeUsuario"]; ?></p>
                                     <?php
                                     for ($i = 0; $i < $dado["numeroStar"]; $i++) { ?>
                                         <?php echo "<img src='img/star1.png'>"; ?>
@@ -98,7 +101,8 @@ $sqlBuscar = mysqli_query($link, $sql);
                                 <?php } ?>
                                 <?php
                                 if ($dado["numeroStar"] == 2) { ?>
-                                    <p style="margin-bottom: 2px; font-weight: bold; size: 18px"><?php echo $dado["nomeUsuario"]; ?></p>
+                                    <p style="margin-bottom: 2px; font-weight: bold; size: 18px">
+                                        <?php echo $dado["nomeUsuario"]; ?></p>
                                     <?php
                                     for ($i = 0; $i < $dado["numeroStar"]; $i++) { ?>
                                         <?php echo "<img src='img/star1.png'>"; ?>
@@ -107,7 +111,8 @@ $sqlBuscar = mysqli_query($link, $sql);
                                 <?php } ?>
                                 <?php
                                 if ($dado["numeroStar"] == 1) { ?>
-                                    <p style="margin-bottom: 2px; font-weight: bold; size: 18px"><?php echo $dado["nomeUsuario"]; ?></p>
+                                    <p style="margin-bottom: 2px; font-weight: bold; size: 18px">
+                                        <?php echo $dado["nomeUsuario"]; ?></p>
                                     <?php
                                     for ($i = 0; $i < $dado["numeroStar"]; $i++) { ?>
                                         <?php echo "<img src='img/star1.png'>"; ?>
@@ -169,8 +174,10 @@ $sqlBuscar = mysqli_query($link, $sql);
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
     </script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
     <script src="http://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function() {
