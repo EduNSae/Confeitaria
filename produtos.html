@@ -26,11 +26,9 @@
 <body>
     <main>
         <section>
-            <!-- Primary Page Layout
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
             <div class="container simpleStore">
                 <div class="row">
-                    <a class="brand" href="index.html"></a>
+                    <a class="brand" href="index.php"></a>
                     <a class="button button-primary u-pull-right simpleStore_viewCart">
                         <i class="fa fa-shopping-cart"></i> Carrinho <span class="simpleCart_total"></span>
                     </a>
@@ -40,8 +38,7 @@
             </div>
         </section>
         <section>
-            <!-- Products View 
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <!-- Vizualiar Produto -->
             <script id="products-template" type="x-template">
                 <div class="column">
                     <div class="simpleCart_shelfItem">
@@ -60,8 +57,7 @@
             </script>
         </section>
         <section>
-            <!-- Product Detail View 
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <!-- Visualizar detalhes do produto -->
             <script id="product-detail-template" type="x-template">
                 <div class="simpleCart_shelfItem simpleStore_detailView">
                     <a href="#" class="close view_close">&times;</a>
@@ -88,8 +84,8 @@
             </script>
         </section>
         <section>
-            <!-- Cart View 
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+            <!-- Visualizar Carrinho  -->
             <script id="cart-template" type="x-template">
                 <div class="simpleStore_cart">
                     <h2>Carrinho</h2>
@@ -122,8 +118,13 @@
             </script>
         </section>
         <section>
-            <!-- Error View
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <!-- Encomenda -->
+            <p style="text-align: center;font-size: 20px;">Não acho nada ao seu gosto, então realize a suas encomendas via Whatsapp telefone: <a
+                    href="https://api.whatsapp.com/send/?phone=556133887088&text&app_absent=0">(61)
+                    3388-7088</a></p>
+        </section>
+        <section>
+            <!-- Visualizar Erro -->
             <script id="error-template" type="x-template">
                 <div class="error">
                     <b>Sorry, something went wrong :(</b>

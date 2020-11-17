@@ -1,31 +1,39 @@
 <?php
+ini_set('default_charset','UTF-8');
+include ("connect.php");
+include ("VerificarLogin.php");
 
+if(isset( $_POST['email']) && isset($_POST['senha']) ){
+$email=$_POST['email'];
+$password=$_POST['senha'];
+$sql = "SELECT * FROM ClienteDB WHERE email='$email' and senha='$password'";
+$query = $link->query($sql) or die("erro ao selecionar");
+$count = mysqli_num_rows($query);
+if($count == 0){
+
+echo "<script>alert('Este registo não existe!')</script>";
+echo "<script>window.open('../login.html', '_self')</script>";
+}
+else{
 session_start();
-include("connect.php");
+$_SESSION['email'] = $email;
+$_SESSION['senha'] = $password;
 
-$email = filter_input(INPUT_POST, 'email');
-$senha = filter_input(INPUT_POST, 'senha');
-    
-    $verifica = $link->query("SELECT * FROM ClienteDB WHERE email =
-        '$email' AND senha = '$senha'") or die("erro ao selecionar");
-        
-    if ($verifica->num_rows <= 0) {
-        $_SESSION['email'] = $email;
-        $_SESSION['senha'] = $senha;
-              echo"<script>
-                        alert('Login e/ou senha incorretos');
-                        window.location.href='../login.html';
-                    </script>";
-            die();
-            
-    }else{
-        setcookie("login",$email);
-        echo "<script>
-                alert('Seja bem vindo');
-                window.location.href='../index.html';
-              </script>
-        ";
-  }
+$proc_nome = $link->query("SELECT nome FROM ClienteDB WHERE email = '$email' ");
+$nome_utilizador = mysqli_fetch_array($proc_nome);
 
-exit;
+$user = $nome_utilizador['nome'];
+
+gravar($email);
+
+echo "<script>alert('$user, \\n\\n Bem-Vindo à Casa Fouet')</script>";
+echo "<script>window.open('../index.php', '_self')</script>";
+}
+}else{
+ echo "<script>window.open('../login.html', '_self')</script>";
+}
+$link->close();
+
+//Criamos uma função que recebe um texto como parâmetro.
+
 ?>

@@ -13,18 +13,28 @@ $email = $_POST['email'];
 $senha = $_POST['senha'];
 $date = $_POST['date'];
 
-$sql = "CALL Insere('$nome', '$sobrenome', '$endereco', '$cep', '$estado', '$city', '$email', '$senha', CURDATE(), '$date')";
-            
+$verificarEmail = $link->query("SELECT * FROM ClienteDB WHERE email = '$email'");
+
+if ($verificarEmail->num_rows <= 0) {
+    
+    $sql = "CALL Insere('$nome', '$sobrenome', '$endereco', '$cep', '$estado', '$city', '$email', '$senha', CURDATE(), '$date')";
+
     if ($link->query($sql) === TRUE) {
         echo "<script>
                 alert('cadastrado com sucesso');
                 window.location.href = '../login.html';
               </script>";
-    }else {
-        echo "<script>
-                alert('Dados inseridos incorretamente');
-                 window.location.href = '../signup.html';
-              </script>";
+              } else {
+                  echo "<script>
+                            alert('Dados inseridos incorretamente');
+                            window.location.href = '../signup.html';
+                        </script>";   
+              }       
+} else {
+    echo "<script>
+            alert('Email ja casdastrado');
+            window.location.href = '../signup.html';
+          </script>";
     }
-
 exit;
+?>

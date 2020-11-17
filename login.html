@@ -5,17 +5,19 @@
   <link rel="stylesheet" href="css/reset.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>Login</title>
+
+  <!--Estilo da pagina-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/signin.css">
   <link rel="stylesheet" href="css/style.css">
+  
+  <title>Login</title>
+  <link rel="shortcut icon" href="img/icons/do-utilizador.png" type="image/x-icon">
 </head>
 
-<body class="text-center">
+<body class="text-center fundocolor">
   <form class="form-signin" action="php/login.php" method="POST">
     <img class="mb-4" src="img/icon.png" alt="" width="150" height="150">
     <h1 class="h3 mb-3 font-weight-normal">Faça login</h1>
@@ -25,19 +27,15 @@
     <label for="inputPassword" class="sr-only" minlength="6" maxlength="16">Senha</label>
     <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required name="senha">
     <div class="checkbox mb-3 m_top">
-
-      <label>
-        <input type="checkbox" value="remember-me"> Lembrar de mim</label>
-      </br>
-      <a href="signup.html" class="linkgl">Não possui cadastro?</a>
+      <a href="signup.html" class="linklogin">Não possui cadastro?</a>
     </div>
     <button class="btn btn-block btn-card" type="submit">LOGIN</button>
 
-    <button class="btn btn-block btn-card" onclick="window.location.href='index.html'">VOLTAR</button>
+    <button class="btn btn-block btn-card" onclick="window.location.href='index.php'">VOLTAR</button>
     <p class="mt-5 mb-3 text-muted">© 2020</p>
   </form>
 
-  <script src="login.js"></script>
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -47,7 +45,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
-
+  <script src="login.js"></script>
 </body>
-
 </html>
